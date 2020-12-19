@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  web:
+    build: ./app
+    command: bash -c "python manage.py makemigrations && python manage.py migrate && gunicorn privage.wsgi -b 0.0.0.0:8000"
+    volumes:
+      - ./app/:/usr/src/app/
+
+    expose:
+      - "8000"
+  nginx:
+    image: nginx:latest
+    container_name: privage-x-line
+    ports:
+      - "80:80"
+    volumes:
+      - ./app/:/src
+      - ./config/nginx:/etc/nginx/conf.d
+      
+    depends_on:
+      - web
