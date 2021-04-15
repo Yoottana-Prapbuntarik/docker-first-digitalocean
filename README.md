@@ -7,8 +7,8 @@
 * เซ็ต nginx จึงสร้างไฟล์ config ขึ้นมา
 
 
-```
-https://ruddra.com/serve-static-files-by-nginx-from-django-using-docker/   
+[https://ruddra.com/serve-static-files-by-nginx-from-django-using-docker/](https://ruddra.com/serve-static-files-by-nginx-from-django-using-docker/)
 
+```
 Static file 
 ```
