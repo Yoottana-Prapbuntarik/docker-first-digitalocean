@@ -5,3 +5,10 @@
 * สร้างไฟล์ docker-compose.yml มาเพื่อ Operation  images เพื่อรัน Container 
 
 * เซ็ต nginx จึงสร้างไฟล์ config ขึ้นมา
+
+
+```
+https://ruddra.com/serve-static-files-by-nginx-from-django-using-docker/   
+
+Static file 
+```
